@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="language" href="es" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>SkaBurgers</title>
+    <meta name="description" content="Where every bite feels like home!" />
+    <meta name="ROBOTS" content="ALL" />
+    <meta name="keywords" content="burger,restaurant,lunch" />
+    <link rel="author" href="https://github.com/codehasan" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="#">
+                        <img src="assets/logo.png" alt="logo" class="nav__logo-dark" />
+                        <img src="assets/logo.png" alt="logo" class="nav__logo-white" />
+                    </a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#home">INICIO</a></li>
+                <li><a href="#whois">QUIENES SOMOS</a></li>
+                <li><a href="#menu">CARTA</a></li>
+                <li><a href="#event">LOCALES</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+                <li><a href="login.html">IDENTIFICARSE</a></li>
+            </ul>
+        </nav>
+
+        <div class="section__container header__container" id="home">
+            <div class="header__image">
+                <div>
+                    <div class="carousel">
+                        <ul class="slides">
+                            <input type="radio" name="radio-buttons" id="img-1" checked />
+                            <li class="slide-container">
+                                <div class="slide-image">
+                                    <img src="assets/banner.png">
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-3" class="prev-slide">
+                                        <span>&lsaquo;</span>
+                                    </label>
+                                    <label for="img-2" class="next-slide">
+                                        <span>&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <input type="radio" name="radio-buttons" id="img-2" />
+                            <li class="slide-container">
+                                <div class="slide-image">
+                                    <img src="assets/personaje.png">
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-1" class="prev-slide">
+                                        <span>&lsaquo;</span>
+                                    </label>
+                                    <label for="img-3" class="next-slide">
+                                        <span>&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <input type="radio" name="radio-buttons" id="img-3" />
+                            <li class="slide-container">
+                                <div class="slide-image">
+                                    <img
+                                        src="https://cdn.vox-cdn.com/thumbor/0nmbmDBX13nbk9i6HgbrQkWG92M=/0x0:1440x1440/1200x900/filters:focal(605x605:835x835)/cdn.vox-cdn.com/uploads/chorus_image/image/66283549/gladly.14.jpg">
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-2" class="prev-slide">
+                                        <span>&lsaquo;</span>
+                                    </label>
+                                    <label for="img-1" class="next-slide">
+                                        <span>&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <div class="carousel-dots">
+                                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                            </div>
+                            <script>
+                                document.addEventListener("DOMContentLoaded", () => {
+                                    const labels = document.querySelectorAll(".carousel-dot");
+                                    let currentIndex = 0;
+                                    let isFirstRun = true;
+
+                                    setInterval(() => {
+                                        if (isFirstRun && currentIndex === 0) {
+                                            isFirstRun = false;
+                                        } else {
+                                            labels[currentIndex].click();
+                                        }
+                                        currentIndex = (currentIndex + 1) % labels.length;
+                                    }, 5000);
+                                });
+
+
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header__content">
+                <h2>ES BUEN MOMENTO PARA EL GRAN SABOR DE SKABURGERS</h2>
+                <h1>SEMANA DE<br /><span>PROMOCIONES</span></h1>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="section__container order__container" id="menu">
+        <h3>LAS MEJORES HAMBURGUESAS</h3>
+        <h2 class="section__header">ELIGE Y DISFRUTA</h2>
+        <p class="section__description">
+            Ya sea que te apetezcan sabores clásicos o combinaciones atrevidas, aquí es donde
+            Comienza tu viaje culinario. Satisface tus antojos y saborea cada bocado
+            mientras creas tu experiencia de hamburguesa personalizada con SkaBurgers.
+        </p>
+        <div class="order__grid">
+            <style>
+                .order__card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .order__card p {
+                    text-align: center;
+                    flex-grow: 1;
+                }
+            </style>
+            <div class="order__card">
+                <img src="assets/order-1.png" alt="order" />
+                <h4>Hamburguesa de pollo</h4>
+                <p>
+                    Prueba la perfección atemporal de nuestra Hamburguesa de pollo, una experiencia que nunca pasa de
+                    moda.
+                </p>
+                <br>
+                <button id="ordenar" class="btn">ORDENAR AHORA</button>
+                <script>
+                    document.getElementById('ordenar').addEventListener('click', () => {
+                        window.location.href = 'ordenar.html';
+                    });
+                </script>
+            </div>
+            <div class="order__card">
+                <img src="assets/order-2.png" alt="order" />
+                <h4>Hamburguesa Delicia Vegetariana</h4>
+                <p>
+                    Disfrute de los vibrantes sabores de nuestra Hamburguesa Delicia Vegetariana, una celebración de la
+                    frescura y
+                    la bondad saludable.
+                </p>
+                <button class="btn">ORDENAR AHORA</button>
+            </div>
+            <div class="order__card">
+                <img src="assets/order-3.png" alt="order" />
+                <h4>Hamburguesa De Tocino BBQ</h4>
+                <p>
+                    Disfrute de una sinfonía de sabores ahumados y salados con nuestra Hamburguesa De Tocino BBQ asada y
+                    cubierta
+                    con tocino crujiente.
+                </p>
+                <button class="btn">ORDENAR AHORA</button>
+            </div>
+        </div>
+        <br>
+        <div style="width: 100%;">
+            <center><a href="menu.html" class="btn" style="width: 400px; background-color: #ffc135; display: block;">VER
+                    MENU
+                    COMPLETO</a></center>
+        </div>
+    </section>
+
+
+    <section class="section__container banner__container" id="whois">
+        <div class="banner__card">
+            <p>¿QUIENES SOMOS?</p>
+            <h3 style="color: white; font-size: 1em;">En Ska Burgers, creemos que una buena hamburguesa es más que un
+                platillo: es una experiencia que combina sabor, calidad y pasión. Desde nuestros inicios, nos hemos
+                dedicado a
+                ofrecer hamburguesas únicas elaboradas con ingredientes frescos y seleccionados cuidadosamente,
+                asegurando que
+                cada bocado sea inolvidable.
+                Nos inspira la energía y la autenticidad del ska, un ritmo vibrante que nos motiva a romper la rutina y
+                celebrar
+                la vida con buen sabor. Así como la música une a las personas, nuestras hamburguesas reúnen a familias y
+                amigos
+                alrededor de una mesa llena de alegría y buena comida.
+                Ya sea que busques un clásico delicioso o una creación audaz y original, en Ska Burgers encontrarás el
+                balance
+                perfecto entre tradición e innovación. Ven y descubre por qué somos el lugar favorito de los amantes de
+                las
+                hamburguesas.</h3>
+        </div>
+        <div class="banner__card">
+            <p>ENFOCADOS EN LA VARIEDAD</p>
+            <h4>MAS SABOR<br />CON NUESTRAS<br />ESPECIALIDADES</h4>
+        </div>
+        <div class="banner__card">
+            <p>NOS PREOCUPAMOS POR LA CALIDAD</p>
+            <h4>CON INGREDIENTES<br />FRESCOS</h4>
+        </div>
+    </section>
+
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@karlynavarelli/video/7457255526288706822"
+        data-video-id="7457255526288706822" style="max-width: 605px;min-width: 325px;">
+        <section> <a target="_blank" title="@karlynavarelli"
+                href="https://www.tiktok.com/@karlynavarelli?refer=embed">@karlynavarelli</a> <a title="skaburgers"
+                target="_blank" href="https://www.tiktok.com/tag/skaburgers?refer=embed">#SkaBurgers</a> <a
+                target="_blank" title="♬ sonido original - Karly"
+                href="https://www.tiktok.com/music/sonido-original-7457255555868625670?refer=embed">♬ sonido original -
+                Karly</a> </section>
+    </blockquote>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
+    <section class="section__container event__container" id="event">
+        <div class="event__content">
+            <div class="event__image">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1044.5180637406575!2d-99.1866211249171!3d19.409642522639402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff5e6fc56297%3A0x6ffa4a4847f8455e!2sSUKKABURGER!5e1!3m2!1sen!2smx!4v1736226635937!5m2!1sen!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="event__details">
+                <h3>Descubre</h3>
+                <h2 class="section__header">NUESTRAS SUCURSALES</h2>
+                <p class="section__description">
+                    En SkaBurgers, te invitamos a disfrutar de una experiencia gastronómica única. ❤️ Aquí, cada
+                    platillo está
+                    preparado con pasión y los mejores ingredientes para hacer de cada bocado un momento especial.
+                    🥗🍔🍝 <br>
+                    Aunque por ahora tenemos una sola sucursal, ¡esto es solo el comienzo! Muy pronto estaremos llegando
+                    a más
+                    lugares para estar más cerca de ti. 🚀✨<br>
+                    No te pierdas la oportunidad de ser parte de nuestra historia desde el principio. Ven a visitarnos y
+                    déjate
+                    sorprender por nuestra comida, nuestro ambiente y, sobre todo, por nuestro compromiso de brindarte
+                    lo mejor.
+                    🙌
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation" id="contact">
+        <div class="section__container reservation__container">
+            <h3>Contactanos</h3>
+            <h2 class="section__header">TU OPINION ES IMPORTANTE</h2>
+            <form action="/" style="display: flex; flex-direction: column;">
+                <input type="text" placeholder="Nombre" />
+                <input type="email" placeholder="Email" />
+                <textarea type="text" placeholder="Comentario"></textarea>
+                <button class="btn btn-square" type="submit">Enviar comentario</button>
+            </form>
+        </div>
+        <img src="assets/reservation-bg-1.png" alt="reservation" class="reservation__bg-1" />
+        <img src="assets/reservation-bg-2.png" alt="reservation" class="reservation__bg-2" />
+    </section>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__content">
+                <p>
+                    Bienvenido a SkaBurgers, donde la pasión por la comida excepcional y
+                    La hospitalidad genuina se une. Nuestra historia es una de dedicación a
+                    elaborando la experiencia de hamburguesa perfecta, desde la obtención de los mejores
+                    ingredientes para brindar un sabor incomparable en cada bocado.
+                </p>
+                <div>
+                    <ul class="footer__links">
+                        <li>
+                            <span><i class="ri-map-pin-2-fill"></i></span>
+                            Calle 123, Ciudad de México, México
+                        </li>
+                        <li>
+                            <span><i class="ri-mail-fill"></i></span>
+                            info@skaburgers.com
+                        </li>
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-whatsapp-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2024 Ska'Burgers. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Código de instalación Cliengo para lopez17081@gmail.com -->
+    <script type="text/javascript">
+        (function () {
+            var ldk = document.createElement('script');
+            ldk.type = 'text/javascript';
+            ldk.async = true;
+            ldk.src = 'https://s.cliengo.com/weboptimizer/677cb38f5025cc3ad06e2d22/677cb38f5025cc3ad06e2d25.js?platform=onboarding_modular';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s);
+        })();
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

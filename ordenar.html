@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="language" href="es" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Burger House</title>
+    <meta name="description" content="Where every bite feels like home!" />
+    <meta name="ROBOTS" content="ALL" />
+    <meta name="keywords" content="burger,restaurant,lunch" />
+    <link rel="author" href="https://github.com/codehasan" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="#">
+                        <img src="assets/logo-dark.png" alt="logo" class="nav__logo-dark" />
+                        <img src="assets/logo-white.png" alt="logo" class="nav__logo-white" />
+                    </a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html#home">INICIO</a></li>
+                <li><a href="index.html#whois">QUIENES SOMOS</a></li>
+                <li><a href="index.html#menu">CARTA</a></li>
+                <li><a href="index.html#event">LOCALES</a></li>
+                <li><a href="index.html#contact">CONTACTO</a></li>
+                <li><a href="login.html">IDENTIFICARSE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="order__card">
+                    <img src="assets/order-2.png" alt="order" />
+                    <h4>Hamburguesa Delicia Vegetariana</h4>
+                    <p>
+                        Disfrute de los vibrantes sabores de nuestra Hamburguesa Delicia Vegetariana, una celebración de
+                        la frescura y
+                        la bondad saludable.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="order__card">
+                    <h4>Opciones de personalizacion</h4>
+                    <p>
+                        Personalice su hamburguesa con los ingredientes de su elección. Elija entre una variedad de
+                        ingredientes frescos y
+                        sabrosos para crear la hamburguesa perfecta.
+                    </p>
+                    <form action="pedido.html">
+                        <div class="form-group">
+                            <label for="ingredientes">Ingredientes</label>
+                            <select class="form-control" id="ingredientes" name="ingredientes">
+                                <option value="lechuga">Lechuga</option>
+                                <option value="tomate">Tomate</option>
+                                <option value="cebolla">Cebolla</option>
+                                <option value="pepinillos">Pepinillos</option>
+                                <option value="queso">Queso</option>
+                                <option value="tocino">Tocino</option>
+                                <option value="salsa">Salsa</option>
+                            </select>
+                            <label for="adicional">Adicional</label>
+                            <select class="form-control" id="adicional" name="adicional">
+                                <option value="refresco">Refresco</option>
+                                <option value="papas">Papas</option>
+                            </select>
+                            <label for="cantidad">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidad" name="cantidad" />
+                            <br>
+                            <span class="badge text-bg-success">Lechuga</span>
+                            <span class="badge text-bg-success">Jitomate</span>
+                            <span class="badge text-bg-success">Cebolla</span>
+                            <br> <br>
+                            <span style="color: #b6b6b6">Para retirar un ingrediente presione sobre el</span>
+
+
+                            <br><br>
+                            <a href="pedido.html" class="btn btn-primary w-100">Enviar Pedido</a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__content">
+                <p>
+                    Bienvenido a Burger House, donde la pasión por la comida excepcional y
+                    La hospitalidad genuina se une. Nuestra historia es una de dedicación a
+                    elaborando la experiencia de hamburguesa perfecta, desde la obtención de los mejores
+                    ingredientes para brindar un sabor incomparable en cada bocado.
+                </p>
+                <div>
+                    <ul class="footer__links">
+                        <li>
+                            <span><i class="ri-map-pin-2-fill"></i></span>
+                            Calle 123, Ciudad de México, México
+                        </li>
+                        <li>
+                            <span><i class="ri-mail-fill"></i></span>
+                            info@skaburgers.com
+                        </li>
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-whatsapp-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2024 Ska'Burgers. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Código de instalación Cliengo para lopez17081@gmail.com -->
+    <script type="text/javascript">
+        (function () {
+            var ldk = document.createElement('script');
+            ldk.type = 'text/javascript';
+            ldk.async = true;
+            ldk.src = 'https://s.cliengo.com/weboptimizer/677cb38f5025cc3ad06e2d22/677cb38f5025cc3ad06e2d25.js?platform=onboarding_modular';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s);
+        })();
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
