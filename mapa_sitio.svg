@@ -1,0 +1,47 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Main Container -->
+    <rect x="350" y="20" width="100" height="40" rx="5" fill="#42200b" />
+    <text x="400" y="45" text-anchor="middle" fill="white" font-size="14">INICIO</text>
+    
+    <!-- Main Level Links -->
+    <line x1="400" y1="60" x2="400" y2="90" stroke="#666" />
+    <line x1="100" y1="90" x2="700" y2="90" stroke="#666" />
+    
+    <!-- Vertical lines to sections -->
+    <line x1="100" y1="90" x2="100" y2="120" stroke="#666" />
+    <line x1="250" y1="90" x2="250" y2="120" stroke="#666" />
+    <line x1="400" y1="90" x2="400" y2="120" stroke="#666" />
+    <line x1="550" y1="90" x2="550" y2="120" stroke="#666" />
+    <line x1="700" y1="90" x2="700" y2="120" stroke="#666" />
+    
+    <!-- Section Boxes -->
+    <rect x="50" y="120" width="100" height="40" rx="5" fill="#8B4513" />
+    <text x="100" y="145" text-anchor="middle" fill="white" font-size="13">QUIENES SOMOS</text>
+    
+    <rect x="200" y="120" width="100" height="40" rx="5" fill="#8B4513" />
+    <text x="250" y="145" text-anchor="middle" fill="white" font-size="14">CARTA</text>
+    
+    <rect x="350" y="120" width="100" height="40" rx="5" fill="#8B4513" />
+    <text x="400" y="145" text-anchor="middle" fill="white" font-size="14">LOCALES</text>
+    
+    <rect x="500" y="120" width="100" height="40" rx="5" fill="#8B4513" />
+    <text x="550" y="145" text-anchor="middle" fill="white" font-size="14">CONTACTO</text>
+    
+    <rect x="650" y="120" width="100" height="40" rx="5" fill="#8B4513" />
+    <text x="700" y="145" text-anchor="middle" fill="white" font-size="13">IDENTIFICARSE</text>
+    
+    <!-- Realizar Pedido connected to Carta -->
+    <line x1="250" y1="160" x2="250" y2="200" stroke="#666" />
+    <rect x="200" y="200" width="100" height="40" rx="5" fill="#A0522D" />
+    <text x="250" y="225" text-anchor="middle" fill="white" font-size="11">REALIZAR PEDIDO</text>
+    
+    <!-- Login/Register Flow -->
+    <line x1="700" y1="160" x2="700" y2="200" stroke="#666" />
+    <rect x="650" y="200" width="100" height="40" rx="5" fill="#A0522D" />
+    <text x="700" y="225" text-anchor="middle" fill="white" font-size="12">LOGIN/REGISTRO</text>
+    
+    <!-- Panel de Usuario -->
+    <line x1="700" y1="240" x2="700" y2="280" stroke="#666" />
+    <rect x="650" y="280" width="100" height="40" rx="5" fill="#A0522D" />
+    <text x="700" y="305" text-anchor="middle" fill="white" font-size="12">PANEL USUARIO</text>
+</svg>
