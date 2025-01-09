@@ -6,7 +6,7 @@
     <link rel="language" href="es" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <title>SkaBurgers</title>
+    <title>GoodSkaBurgers</title>
     <meta name="description" content="Where every bite feels like home!" />
     <meta name="ROBOTS" content="ALL" />
     <meta name="keywords" content="burger,restaurant,lunch" />
@@ -42,86 +42,84 @@
 
         <div class="section__container header__container" id="home">
             <div class="header__image">
-                <div>
-                    <div class="carousel">
-                        <ul class="slides">
-                            <input type="radio" name="radio-buttons" id="img-1" checked />
-                            <li class="slide-container">
-                                <div class="slide-image">
-                                    <img src="assets/banner.png">
-                                </div>
-                                <div class="carousel-controls">
-                                    <label for="img-3" class="prev-slide">
-                                        <span>&lsaquo;</span>
-                                    </label>
-                                    <label for="img-2" class="next-slide">
-                                        <span>&rsaquo;</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <input type="radio" name="radio-buttons" id="img-2" />
-                            <li class="slide-container">
-                                <div class="slide-image">
-                                    <img src="assets/personaje.png">
-                                </div>
-                                <div class="carousel-controls">
-                                    <label for="img-1" class="prev-slide">
-                                        <span>&lsaquo;</span>
-                                    </label>
-                                    <label for="img-3" class="next-slide">
-                                        <span>&rsaquo;</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <input type="radio" name="radio-buttons" id="img-3" />
-                            <li class="slide-container">
-                                <div class="slide-image">
-                                    <img
-                                        src="https://cdn.vox-cdn.com/thumbor/0nmbmDBX13nbk9i6HgbrQkWG92M=/0x0:1440x1440/1200x900/filters:focal(605x605:835x835)/cdn.vox-cdn.com/uploads/chorus_image/image/66283549/gladly.14.jpg">
-                                </div>
-                                <div class="carousel-controls">
-                                    <label for="img-2" class="prev-slide">
-                                        <span>&lsaquo;</span>
-                                    </label>
-                                    <label for="img-1" class="next-slide">
-                                        <span>&rsaquo;</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <div class="carousel-dots">
-                                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-                                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-                                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-                            </div>
-                            <script>
-                                document.addEventListener("DOMContentLoaded", () => {
-                                    const labels = document.querySelectorAll(".carousel-dot");
-                                    let currentIndex = 0;
-                                    let isFirstRun = true;
-
-                                    setInterval(() => {
-                                        if (isFirstRun && currentIndex === 0) {
-                                            isFirstRun = false;
-                                        } else {
-                                            labels[currentIndex].click();
-                                        }
-                                        currentIndex = (currentIndex + 1) % labels.length;
-                                    }, 5000);
-                                });
-
-
-                            </script>
-                        </ul>
-                    </div>
-                </div>
+                <img src="assets/personaje.png" alt="">
             </div>
             <div class="header__content">
-                <h2>ES BUEN MOMENTO PARA EL GRAN SABOR DE SKABURGERS</h2>
+                <h2>ES BUEN MOMENTO PARA EL GRAN SABOR DE GOOD SKABURGERS</h2>
                 <h1>SEMANA DE<br /><span>PROMOCIONES</span></h1>
             </div>
         </div>
     </header>
 
+    <div class="carousel" style="margin-top: 3.5rem;">
+        <ul class="slides">
+            <input type="radio" name="radio-buttons" id="img-1" checked />
+            <li class="slide-container">
+                <div class="slide-image">
+                    <img src="assets/banner.png">
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-3" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-2" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-2" />
+            <li class="slide-container">
+                <div class="slide-image">
+                    <img src="assets/banner_2.png">
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-1" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-3" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-3" />
+            <li class="slide-container">
+                <div class="slide-image">
+                    <img src="assets/banner_3.png">
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-2" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-1" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <div class="carousel-dots">
+                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    const labels = document.querySelectorAll(".carousel-dot");
+                    let currentIndex = 0;
+                    let isFirstRun = true;
+
+                    setInterval(() => {
+                        if (isFirstRun && currentIndex === 0) {
+                            isFirstRun = false;
+                        } else {
+                            labels[currentIndex].click();
+                        }
+                        currentIndex = (currentIndex + 1) % labels.length;
+                    }, 5000);
+                });
+
+
+            </script>
+        </ul>
+    </div>
 
     <section class="section__container order__container" id="menu">
         <h3>LAS MEJORES HAMBURGUESAS</h3>
@@ -129,7 +127,7 @@
         <p class="section__description">
             Ya sea que te apetezcan sabores clásicos o combinaciones atrevidas, aquí es donde
             Comienza tu viaje culinario. Satisface tus antojos y saborea cada bocado
-            mientras creas tu experiencia de hamburguesa personalizada con SkaBurgers.
+            mientras creas tu experiencia de hamburguesa personalizada con Good SkaBurgers.
         </p>
         <div class="order__grid">
             <style>
@@ -167,7 +165,12 @@
                     frescura y
                     la bondad saludable.
                 </p>
-                <button class="btn">ORDENAR AHORA</button>
+                <button id="ordenar2" class="btn">ORDENAR AHORA</button>
+                <script>
+                    document.getElementById('ordenar2').addEventListener('click', () => {
+                        window.location.href = 'ordenar.html';
+                    });
+                </script>
             </div>
             <div class="order__card">
                 <img src="assets/order-3.png" alt="order" />
@@ -177,14 +180,17 @@
                     cubierta
                     con tocino crujiente.
                 </p>
-                <button class="btn">ORDENAR AHORA</button>
+                <button id="ordenar3" class="btn">ORDENAR AHORA</button>
+                <script>
+                    document.getElementById('ordenar3').addEventListener('click', () => {
+                        window.location.href = 'ordenar.html';
+                    });
+                </script>
             </div>
         </div>
         <br>
         <div style="width: 100%;">
-            <center><a href="menu.html" class="btn" style="width: 400px; background-color: #ffc135; display: block;">VER
-                    MENU
-                    COMPLETO</a></center>
+            <center><a href="menu.html" class="btn" style="width: 400px; background-color: #42200b; display: block;">VER MENU COMPLETO</a></center>
         </div>
     </section>
 
@@ -219,17 +225,18 @@
         </div>
     </section>
 
-    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@karlynavarelli/video/7457255526288706822"
-        data-video-id="7457255526288706822" style="max-width: 605px;min-width: 325px;">
-        <section> <a target="_blank" title="@karlynavarelli"
-                href="https://www.tiktok.com/@karlynavarelli?refer=embed">@karlynavarelli</a> <a title="skaburgers"
-                target="_blank" href="https://www.tiktok.com/tag/skaburgers?refer=embed">#SkaBurgers</a> <a
-                target="_blank" title="♬ sonido original - Karly"
-                href="https://www.tiktok.com/music/sonido-original-7457255555868625670?refer=embed">♬ sonido original -
-                Karly</a> </section>
-    </blockquote>
-    <script async src="https://www.tiktok.com/embed.js"></script>
-
+    <div style="margin: 0 13rem;">
+        <div style="display: flex; align-items: flex-start; gap: 20px;">
+        
+            <!-- MP4 Video -->
+            <video style="border-radius: 15px; flex: 2;" autoplay muted loop controls id="myVideo">
+                <source src="assets/promo.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+    
+    
     <section class="section__container event__container" id="event">
         <div class="event__content">
             <div class="event__image">
@@ -242,7 +249,7 @@
                 <h3>Descubre</h3>
                 <h2 class="section__header">NUESTRAS SUCURSALES</h2>
                 <p class="section__description">
-                    En SkaBurgers, te invitamos a disfrutar de una experiencia gastronómica única. ❤️ Aquí, cada
+                    En Good SkaBurgers, te invitamos a disfrutar de una experiencia gastronómica única. ❤️ Aquí, cada
                     platillo está
                     preparado con pasión y los mejores ingredientes para hacer de cada bocado un momento especial.
                     🥗🍔🍝 <br>
@@ -278,7 +285,7 @@
         <div class="section__container footer__container">
             <div class="footer__content">
                 <p>
-                    Bienvenido a SkaBurgers, donde la pasión por la comida excepcional y
+                    Bienvenido a Good SkaBurgers, donde la pasión por la comida excepcional y
                     La hospitalidad genuina se une. Nuestra historia es una de dedicación a
                     elaborando la experiencia de hamburguesa perfecta, desde la obtención de los mejores
                     ingredientes para brindar un sabor incomparable en cada bocado.
@@ -291,7 +298,7 @@
                         </li>
                         <li>
                             <span><i class="ri-mail-fill"></i></span>
-                            info@skaburgers.com
+                            info@goodskaburgers.com
                         </li>
                     </ul>
                     <div class="footer__socials">

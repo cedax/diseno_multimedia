@@ -1,14 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,400;1,400..600&display=swap");
 
+body {
+  background-color: #fff!important;
+}
+
 :root {
   --primary-color: #42200b;
   --secondary-color: #ffc135;
-  --tertiary-color: #df1c1c;
+  --tertiary-color: #7e4d2e;
   --text-dark: #212529;
   --white: #ffffff;
   --max-width: 1200px;
   --header-font-1: "Alfa Slab One", serif;
   --header-font-2: "Bebas Neue", sans-serif;
+}
+
+.step.active {
+  background: #42200b!important;
+  color: white;
+}
+
+.btn-primary:active {
+  background-color: #42200b!important;
+  border-color: #42200b!important;
 }
 
 * {
@@ -103,7 +117,7 @@ nav {
 }
 
 .nav__logo img {
-  width: 80px;
+  width: 150px;
 }
 
 .nav__logo-dark {
@@ -156,6 +170,7 @@ nav {
 }
 
 .header__image img {
+  width: 65%;
   max-width: 600px;
   margin-inline: auto;
 }
@@ -170,6 +185,7 @@ nav {
   font-family: var(--header-font-2);
   color: var(--primary-color);
   border: 2px dashed var(--primary-color);
+  background-color: rgb(255, 255, 255, 0.15);
   text-align: center;
 }
 
@@ -260,8 +276,8 @@ nav {
   font-size: 1.5rem;
   font-weight: 400;
   font-family: var(--header-font-2);
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+  color: var(--white);
+  background-color: var(--primary-color);
 }
 
 .order__container .section__header {
@@ -469,7 +485,6 @@ nav {
   }
 }
 
-@media (width > 768px) {
   .header {
     min-height: 0px;
   }
@@ -489,7 +504,7 @@ nav {
   }
 
   .nav__logo img {
-    max-width: 250px;
+    max-width: 350px;
   }
 
   .nav__logo-dark {
@@ -506,12 +521,13 @@ nav {
 
   .nav__links {
     position: static;
-    padding: 0;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 2rem;
     transform: none;
     z-index: 1;
+    max-width: 770px;
   }
 
   .nav__links a {
@@ -519,7 +535,7 @@ nav {
   }
 
   .nav__links a:hover {
-    color: var(--tertiary-color);
+    color: var(--white);
   }
 
   .header__container {
@@ -604,7 +620,6 @@ nav {
   .footer__socials {
     justify-content: flex-end;
   }
-}
 
 @media (width > 1024px) {
   .order__grid {

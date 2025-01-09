@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 
+<style>
+    .active {
+        color: #fff;
+        background-color: #42200b!important;
+    }
+</style>
+
 <body>
     <header class="header">
         <nav>
@@ -144,6 +151,17 @@
                             color: white !important;
                         }
                     </style>
+
+                    <script>
+                        const btns = document.querySelectorAll('.btn');
+                        btns.forEach(btn => {
+                            btn.addEventListener('click', () => {
+                                alert('Este boton no tiene  funcionalidad, de agregar a la bolsa, redirige a la pagina de pedido');
+                                window.location.href = 'ordenar.html';
+                            });
+                        });
+
+                    </script>
                 </div>
             </section>
         </div>
