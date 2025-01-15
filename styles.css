@@ -226,6 +226,23 @@ nav {
   background-position: center; /* Centra la imagen */
 }
 
+.banner__card:nth-child(2) {
+  background-image: url("assets/banner-2.png");
+}
+
+.banner__card:nth-child(3) {
+  background-image: url("assets/banner-3.png");
+}
+
+.banner__card p {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+
 .banner__card:nth-child(1)::before {
   content: "";
   position: absolute;
@@ -241,24 +258,6 @@ nav {
 .banner__card:nth-child(1) > * {
   position: relative;
   z-index: 2; /* El contenido debe estar encima del pseudo-elemento */
-}
-
-
-
-.banner__card:nth-child(2) {
-  background-image: url("assets/banner-2.png");
-}
-
-.banner__card:nth-child(3) {
-  background-image: url("assets/banner-3.png");
-}
-
-.banner__card p {
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--white);
-  text-shadow: rgb(0, 0, 0) 1px 0 10px;
 }
 
 .banner__card h4 {

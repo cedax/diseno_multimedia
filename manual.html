@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Diseño - Good SkaBurger's</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: repeating-linear-gradient(
+                45deg,
+                #ffc13522,
+                #ffc13522 10px,
+                #ffffff 10px,
+                #ffffff 20px
+            );
+        }
+        .alfa-slab {
+            font-family: 'Alfa Slab One', cursive;
+        }
+        .bebas-neue {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .brand-brown {
+            color: #42200b;
+        }
+        .brand-yellow {
+            color: #ffc135;
+        }
+        .bg-brand-brown {
+            background-color: #42200b;
+        }
+        .bg-brand-yellow {
+            background-color: #ffc135;
+        }
+        .color-swatch {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .ska-pattern {
+            background: repeating-linear-gradient(
+                45deg,
+                #000,
+                #000 10px,
+                #fff 10px,
+                #fff 20px
+            );
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header class="bg-brand-brown text-white py-8 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center">
+                <img src="/api/placeholder/150/150" alt="Logo Good SkaBurger's" class="mb-4 rounded-full border-4 border-yellow-400">
+                <h1 class="alfa-slab text-4xl md:text-6xl text-center mb-2">Good SkaBurger's</h1>
+                <p class="bebas-neue text-xl md:text-2xl text-yellow-400">Manual de Identidad Visual</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="bg-white rounded-lg shadow-xl p-8 mb-8">
+            <h2 class="alfa-slab text-3xl brand-brown mb-6">Objetivo y Misión</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-yellow-50 p-6 rounded-lg">
+                    <h3 class="bebas-neue text-2xl brand-brown mb-4">Objetivo</h3>
+                    <p>Lograr la satisfacción total de nuestros clientes al ofrecer hamburguesas innovadoras y un ambiente único, consolidándonos como referente de calidad en la industria de la comida rápida.</p>
+                </div>
+                <div class="bg-yellow-50 p-6 rounded-lg">
+                    <h3 class="bebas-neue text-2xl brand-brown mb-4">Misión</h3>
+                    <p>Ofrecer hamburguesas artesanales de alta calidad con una fusión de sabores únicos que reflejan la energía del ska, brindando una experiencia gastronómica divertida y auténtica.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-xl p-8 mb-8">
+            <h2 class="alfa-slab text-3xl brand-brown mb-6">Paleta de Colores</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="flex flex-col items-center">
+                    <div class="color-swatch mb-2" style="background-color: #42200b"></div>
+                    <p class="text-sm font-semibold">#42200b</p>
+                    <p class="text-xs">Marrón Principal</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="color-swatch mb-2" style="background-color: #ffc135"></div>
+                    <p class="text-sm font-semibold">#ffc135</p>
+                    <p class="text-xs">Amarillo</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="color-swatch mb-2" style="background-color: #7e4d2e"></div>
+                    <p class="text-sm font-semibold">#7e4d2e</p>
+                    <p class="text-xs">Marrón Medio</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="color-swatch mb-2" style="background-color: #212529"></div>
+                    <p class="text-sm font-semibold">#212529</p>
+                    <p class="text-xs">Texto</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="color-swatch mb-2 border" style="background-color: #ffffff"></div>
+                    <p class="text-sm font-semibold">#ffffff</p>
+                    <p class="text-xs">Blanco</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-xl p-8 mb-8">
+            <h2 class="alfa-slab text-3xl brand-brown mb-6">Tipografía</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="alfa-slab text-2xl mb-4">Alfa Slab One</h3>
+                    <p class="text-lg mb-2">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ</p>
+                    <p class="text-sm">Uso: Títulos principales</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="bebas-neue text-2xl mb-4">Bebas Neue</h3>
+                    <p class="text-lg mb-2">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ</p>
+                    <p class="text-sm">Uso: Subtítulos</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-2xl mb-4" style="font-family: Montserrat">Montserrat</h3>
+                    <p class="text-lg mb-2">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ</p>
+                    <p class="text-sm">Uso: Texto general</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-xl p-8 mb-8">
+            <h2 class="alfa-slab text-3xl brand-brown mb-6">Elementos de Diseño</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="bebas-neue text-2xl mb-4">Botones</h3>
+                    <button class="bg-brand-brown text-white px-6 py-3 rounded-lg hover:bg-yellow-600 transition-colors duration-300">Botón Primario</button>
+                </div>
+                <div>
+                    <h3 class="bebas-neue text-2xl mb-4">Tarjetas</h3>
+                    <div class="bg-white shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow duration-300">
+                        <p>Ejemplo de tarjeta con hover effect</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-xl p-8">
+            <h2 class="alfa-slab text-3xl brand-brown mb-6">Mascota</h2>
+            <div class="flex flex-col items-center">
+                <img src="/api/placeholder/300/300" alt="Mascota Good SkaBurger's" class="rounded-lg shadow-lg mb-4">
+                <p class="text-center max-w-md">Nuestra mascota representa la fusión entre la cultura ska y la comida rápida, con un estilo retro y dinámico que refleja nuestra identidad única.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-brown text-white py-6 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Good SkaBurger's - Manual de Identidad Visual</p>
+        </div>
+    </footer>
+</body>
+</html>
